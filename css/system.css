@@ -1,0 +1,219 @@
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.pt-30 {
+  padding-top: 30px !important;
+}
+
+.pt-40 {
+  padding-top: 40px !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+a {
+  display: inline-block;
+
+  vertical-align: baseline;
+  color: #ff8e00;
+
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #ff8e00;
+  text-decoration: underline;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: top;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+b,
+.bold,
+strong,
+label,
+th {
+  font-weight: normal;
+  font-family: "SF UI Display Bold", sans-serif;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b i,
+b em,
+strong i,
+strong em {
+  font-weight: normal;
+  font-family: "SF UI Display Light", sans-serif;
+  font-style: italic;
+}
+
+table a {
+  white-space: nowrap;
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+.thumb-wrap {
+  position: relative;
+
+  height: 0;
+  padding-top: 30px;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* Для битрикса */
+
+.bx-context-toolbar-empty-area {
+  min-width: 12px;
+}
+
+@media (min-width: 1200px) {
+  /*Ноутбук и выше*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*Нетбук и выше*/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Планшет и выше*/
+}
+
+@media (max-width: 767px) {
+  /*Мобильные*/
+}

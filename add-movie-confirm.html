@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/system.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Покупка фильмов - добавить фильм - подтверждение | PazlPub</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="movies-list.html">
+          <img src="img/svg/logo.svg" alt="PazlPub" width="144" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="movies-list.html">Покупка фильмов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add-puzzles.html">Банк пазлов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin-add-movies.html">Админка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Выход</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="movies-list.html">Покупка фильмов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="add-movie.html">Добавить фильм</a>
+            </li>
+          </ul>
+
+          <div class="main-info-text">
+            <p>По твоей ссылке мы нашли этот фильм. Если всё верно, то нажимай кнопку и ожидай покупки. Можешь добавить примечание, например, если нужен специфический перевод или что-то подобное. Или можешь добавить <a href="#">другой фильм</a>.</p>
+          </div>
+
+          <form action="#" class="edit-movie-film">
+            <div class="main-movie-item media">
+              <a href="img/content/izgoi.jpg" data-fancybox class="movie-img">
+                <img src="img/content/izgoi.jpg" alt="Изгой-один. Звездные Войны: Истории (Rogue One. A Star Wars Story)" width="180" height="257">
+              </a>
+              <div class="movie-info media-body">
+                <h2 class="movie-title">
+                  <span class="movie-title-ru">Изгой-один. Звездные Войны: Истории</span>
+                  <span class="movie-title-en"><span class="sr-only">(</span>Rogue One. A Star Wars Story<span class="sr-only">)</span></span>
+                </h2>
+                <div class="movie-rating">
+                  <div class="rating-item kinopoisk"><span>КиноПоиск: </span>7,1</div>
+                  <div class="rating-item imdb"><span>IMDb: </span>7,8</div>
+                </div>
+                <div class="form-group">
+                  <textarea cols="30" rows="7" class="form-control" placeholder="Примечание (по желанию)"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-loader">
+              <button type="submit" class="btn btn-warning">Добавить</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-left">
+        <span class="footer-copyright">2019 &copy; Pazlpub</span>
+        <a href="#">Что такое Pazlpub?</a>
+      </div>
+      <a href="#" target="_blank" class="footer-telegram-link">Наша группа в Telegram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.8/SmoothScroll.min.js" integrity="sha256-AGI6tpsM+WoM5NPo9JQG5djnXt6FiyI/HLuzA2X8iwE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.polyfills.min.js" integrity="sha256-FRJmL/21ayaayfCr+t51tYvxl5FfsAR14n0e2DV/cXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js" integrity="sha256-x4elcEZhSRoId3IcqTS2aqJqxw+KjquMzEjIbIakFVY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/system.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Админка - список фильмов | PazlPub</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="movies-list.html">
+          <img src="img/svg/logo.svg" alt="PazlPub" width="144" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="movies-list.html">Покупка фильмов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add-puzzles.html">Банк пазлов</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="admin-add-movies.html">Админка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Выход</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="admin-add-movies.html">Список фильмов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin-pazzles.html">Банк пазлов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin-vote.html">Голосование</a>
+            </li>
+          </ul>
+
+          <div class="main-info-text">
+            <p>Список всех добавленных фильмов. Можем редактировать, покупать и удалять.</p>
+          </div>
+
+          <form action="#" class="main-movie-filter">
+            <div class="filter-left">
+              <div class="filter-item sorting">По дате добавления</div>
+              <div class="filter-item sorting sorting-down">По количеству голосов «За»</div>
+            </div>
+            <div class="filter-right">
+              <div class="filter-item form-check">
+                <input class="form-check-input" type="checkbox" value="" id="not-purchased">
+                <label class="form-check-label" for="not-purchased">
+                  Ещё не куплены
+                </label>
+              </div>
+              <div class="filter-item form-check">
+                <input class="form-check-input" type="checkbox" value="" id="not-added">
+                <label class="form-check-label" for="not-added">
+                  Ещё не добавлены
+                </label>
+              </div>
+            </div>
+          </form>
+
+          <div class="main-movie-list">
+            <article class="main-movie-item media">
+              <a href="img/content/izgoi.jpg" data-fancybox class="movie-img">
+                <img src="img/content/izgoi.jpg" alt="Изгой-один. Звездные Войны: Истории (Rogue One. A Star Wars Story)" width="180" height="257">
+              </a>
+              <div class="movie-info media-body">
+                <h2 class="movie-title">
+                  <span class="movie-title-ru">Изгой-один. Звездные Войны: Истории</span>
+                  <span class="movie-title-en"><span class="sr-only">(</span>Rogue One. A Star Wars Story<span class="sr-only">)</span></span>
+                </h2>
+                <div class="movie-rating">
+                  <div class="rating-item kinopoisk"><span>КиноПоиск: </span>7,1</div>
+                  <div class="rating-item imdb"><span>IMDb: </span>7,8</div>
+                  <div class="rating-item"><span>За покупку: </span>3</div>
+                  <div class="rating-item"><span>Против: </span>0</div>
+                </div>
+                <div class="movie-announce">Сопротивление собирает отряд для выполнения особой миссии — надо выкрасть чертежи самого совершенного и смертоносного оружия Империи. Возглавляет бойцов неуправляемая и бесстрашная Джин Эрсо, у которой в этом самоубийственном задании есть и личные мотивы. Не всем суждено вернуться домой…</div>
+                <div class="movie-price-and-action-block">
+                  <div class="movie-price-block">
+                    Стоимость: <span class="movie-price">250<span> пазлов</span></span>
+                  </div>
+                  <form action="#" class="movie-action-buttons">
+                    <a href="admin-edit-movie.html" class="movie-action-button edit-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                          <g fill="none" fill-rule="evenodd">
+                            <path fill="#67635B" d="M34 39H20a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2zm-14-4h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2zm29.68-16.26l-1.414 1.412-1.419-1.419 1.413-1.413a1.017 1.017 0 0 1 1.42 0c.39.39.39 1.03 0 1.42zM42 26.41L35.41 33H34v-1.41l6-6 2-2.01 3.432-3.433 1.419 1.419L42 26.41zM40 42c0 2.21-1.79 4-4 4H18c-2.21 0-4-1.79-4-4V14c0-2.21 1.79-4 4-4h18c2.21 0 4 1.79 4 4v8.76l-8 8V35h4.24L40 31.24V42zm11.09-26.09c-.58-.59-1.35-.88-2.12-.88s-1.53.29-2.12.88L42 20.76V14c0-3.31-2.69-6-6-6H18c-3.31 0-6 2.69-6 6v28c0 3.31 2.69 6 6 6h18c3.31 0 6-2.69 6-6V29.24l9.09-9.09a3 3 0 0 0 0-4.24zM20 29h9a1 1 0 1 0 0-2h-9a1 1 0 1 0 0 2zm0-6h14a1 1 0 1 0 0-2H20a1 1 0 1 0 0 2zm0-6h14a1 1 0 1 0 0-2H20a1 1 0 1 0 0 2z"/>
+                          </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </a>
+                    <button type="button" class="movie-action-button delete-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                        <path fill="#67635B" fill-rule="evenodd" d="M34 15H22v-3c0-2.206 1.794-4 4-4h4c2.206 0 4 1.794 4 4v3zm11 0h-9v-3a6 6 0 0 0-6-6h-4a6 6 0 0 0-6 6v3h-9a1 1 0 1 0 0 2h34a1 1 0 1 0 0-2zm-28 8h22v21c0 2.205-1.794 4-4 4H21c-2.206 0-4-1.795-4-4V23zm-2 21a6 6 0 0 0 6 6h14a6 6 0 0 0 6-6V21H15v23zm19 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1z"/>
+                      </svg>
+
+                      <span>Удалить</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary">Купить</button>
+                  </form>
+                </div>
+              </div>
+            </article>
+
+            <article class="main-movie-item media">
+              <a href="img/content/fantastic.jpg" data-fancybox class="movie-img">
+                <img src="img/content/fantastic.jpg" alt="Фантастические твари: Преступления Грин-де-Вальда (Fantastic Beasts: The Crimes of Grindelwald)" width="180" height="257">
+              </a>
+              <div class="movie-info media-body">
+                <h2 class="movie-title">
+                  <span class="movie-title-ru">Фантастические твари: Преступления Грин-де-Вальда</span>
+                  <span class="movie-title-en"><span class="sr-only">(</span>Fantastic Beasts: The Crimes of Grindelwald<span class="sr-only">)</span></span>
+                </h2>
+                <div class="movie-rating">
+                  <div class="rating-item kinopoisk"><span>КиноПоиск: </span>6,7</div>
+                  <div class="rating-item imdb"><span>IMDb: </span>7,0</div>
+                  <div class="rating-item"><span>За покупку: </span>7</div>
+                  <div class="rating-item"><span>Против: </span>3</div>
+                </div>
+                <div class="movie-announce">Могущественный тёмный волшебник Геллерт Грин-де-Вальд пойман в Штатах, но не собирается молча сидеть в темнице и устраивает грандиозный побег. Теперь ничто не помешает ему добиться своей цели — установить превосходство волшебников над всеми немагическими существами на планете. Чтобы сорвать планы…</div>
+                <div class="movie-price-and-action-block">
+                  <div class="movie-price-block">
+                    Стоимость: <span class="movie-price">320<span> пазлов</span></span>
+                  </div>
+                  <form action="#" class="movie-action-buttons">
+                    <a href="admin-edit-movie.html" class="movie-action-button edit-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                          <g fill="none" fill-rule="evenodd">
+                            <path fill="#67635B" d="M34 39H20a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2zm-14-4h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2zm29.68-16.26l-1.414 1.412-1.419-1.419 1.413-1.413a1.017 1.017 0 0 1 1.42 0c.39.39.39 1.03 0 1.42zM42 26.41L35.41 33H34v-1.41l6-6 2-2.01 3.432-3.433 1.419 1.419L42 26.41zM40 42c0 2.21-1.79 4-4 4H18c-2.21 0-4-1.79-4-4V14c0-2.21 1.79-4 4-4h18c2.21 0 4 1.79 4 4v8.76l-8 8V35h4.24L40 31.24V42zm11.09-26.09c-.58-.59-1.35-.88-2.12-.88s-1.53.29-2.12.88L42 20.76V14c0-3.31-2.69-6-6-6H18c-3.31 0-6 2.69-6 6v28c0 3.31 2.69 6 6 6h18c3.31 0 6-2.69 6-6V29.24l9.09-9.09a3 3 0 0 0 0-4.24zM20 29h9a1 1 0 1 0 0-2h-9a1 1 0 1 0 0 2zm0-6h14a1 1 0 1 0 0-2H20a1 1 0 1 0 0 2zm0-6h14a1 1 0 1 0 0-2H20a1 1 0 1 0 0 2z"/>
+                          </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </a>
+                    <button type="button" class="movie-action-button delete-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                        <path fill="#67635B" fill-rule="evenodd" d="M34 15H22v-3c0-2.206 1.794-4 4-4h4c2.206 0 4 1.794 4 4v3zm11 0h-9v-3a6 6 0 0 0-6-6h-4a6 6 0 0 0-6 6v3h-9a1 1 0 1 0 0 2h34a1 1 0 1 0 0-2zm-28 8h22v21c0 2.205-1.794 4-4 4H21c-2.206 0-4-1.795-4-4V23zm-2 21a6 6 0 0 0 6 6h14a6 6 0 0 0 6-6V21H15v23zm19 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1z"/>
+                      </svg>
+
+                      <span>Удалить</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary">Купить</button>
+                  </form>
+                </div>
+              </div>
+            </article>
+
+            <article class="main-movie-item media">
+              <a href="img/content/alita.jpg" data-fancybox class="movie-img">
+                <img src="img/content/alita.jpg" alt="Алита: Боевой ангел (Alita: Battle Angel)" width="180" height="257">
+              </a>
+              <div class="movie-info media-body">
+                <h2 class="movie-title">
+                  <span class="movie-title-ru">Алита: Боевой ангел</span>
+                  <span class="movie-title-en"><span class="sr-only">(</span>Alita: Battle Angel<span class="sr-only">)</span></span>
+                </h2>
+                <div class="movie-rating">
+                  <div class="rating-item kinopoisk"><span>КиноПоиск: </span>7,8</div>
+                  <div class="rating-item imdb"><span>IMDb: </span>7,9</div>
+                  <div class="rating-item"><span>За покупку: </span>0</div>
+                  <div class="rating-item"><span>Против: </span>0</div>
+                </div>
+                <div class="movie-announce">Действие фильма происходит через 300 лет после Великой войны в XXVI веке. Доктор Идо находит останки женщины-киборга. После починки киборг ничего не помнит, но обнаруживает, что в состоянии пользоваться боевыми приемами киборгов. Начинаются поиски утерянных воспоминаний.</div>
+                <div class="movie-price-and-action-block">
+                  <div class="movie-price-block">
+                    Стоимость: <span class="movie-price">250<span> пазлов</span></span>
+                  </div>
+                  <form action="#" class="movie-action-buttons">
+                    <a href="admin-edit-movie.html" class="movie-action-button edit-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                          <g fill="none" fill-rule="evenodd">
+                            <path fill="#67635B" d="M34 39H20a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2zm-14-4h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2zm29.68-16.26l-1.414 1.412-1.419-1.419 1.413-1.413a1.017 1.017 0 0 1 1.42 0c.39.39.39 1.03 0 1.42zM42 26.41L35.41 33H34v-1.41l6-6 2-2.01 3.432-3.433 1.419 1.419L42 26.41zM40 42c0 2.21-1.79 4-4 4H18c-2.21 0-4-1.79-4-4V14c0-2.21 1.79-4 4-4h18c2.21 0 4 1.79 4 4v8.76l-8 8V35h4.24L40 31.24V42zm11.09-26.09c-.58-.59-1.35-.88-2.12-.88s-1.53.29-2.12.88L42 20.76V14c0-3.31-2.69-6-6-6H18c-3.31 0-6 2.69-6 6v28c0 3.31 2.69 6 6 6h18c3.31 0 6-2.69 6-6V29.24l9.09-9.09a3 3 0 0 0 0-4.24zM20 29h9a1 1 0 1 0 0-2h-9a1 1 0 1 0 0 2zm0-6h14a1 1 0 1 0 0-2H20a1 1 0 1 0 0 2zm0-6h14a1 1 0 1 0 0-2H20a1 1 0 1 0 0 2z"/>
+                          </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </a>
+                    <button type="button" class="movie-action-button delete-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                        <path fill="#67635B" fill-rule="evenodd" d="M34 15H22v-3c0-2.206 1.794-4 4-4h4c2.206 0 4 1.794 4 4v3zm11 0h-9v-3a6 6 0 0 0-6-6h-4a6 6 0 0 0-6 6v3h-9a1 1 0 1 0 0 2h34a1 1 0 1 0 0-2zm-28 8h22v21c0 2.205-1.794 4-4 4H21c-2.206 0-4-1.795-4-4V23zm-2 21a6 6 0 0 0 6 6h14a6 6 0 0 0 6-6V21H15v23zm19 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V28a1 1 0 1 0-2 0v15a1 1 0 0 0 1 1z"/>
+                      </svg>
+
+                      <span>Удалить</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary">Купить</button>
+                  </form>
+                </div>
+              </div>
+            </article>
+
+            <div class="main-loader">
+              <a href="#" class="btn btn-warning">Загрузить ещё</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-left">
+        <span class="footer-copyright">2019 &copy; Pazlpub</span>
+        <a href="#">Что такое Pazlpub?</a>
+      </div>
+      <a href="#" target="_blank" class="footer-telegram-link">Наша группа в Telegram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.8/SmoothScroll.min.js" integrity="sha256-AGI6tpsM+WoM5NPo9JQG5djnXt6FiyI/HLuzA2X8iwE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.polyfills.min.js" integrity="sha256-FRJmL/21ayaayfCr+t51tYvxl5FfsAR14n0e2DV/cXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js" integrity="sha256-x4elcEZhSRoId3IcqTS2aqJqxw+KjquMzEjIbIakFVY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>
